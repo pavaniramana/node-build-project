@@ -6,11 +6,11 @@ const contentRouter = express.Router();
 contentRouter.route("/content")
 .get(contentController.getCategory);
 
-contentRouter.route("/blog/:id")
+contentRouter.route("/content/:id")
 .get(contentController.getId);
 
 contentRouter.route("/content/:category")
-    .get(contentController.getCategory); 
+.get(contentController.getCategory); 
 
 
 module.exports = contentRouter

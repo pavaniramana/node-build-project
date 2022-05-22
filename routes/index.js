@@ -3,5 +3,5 @@ const contentRouter = require("./content");
 const router = express.Router();
 
 
-router.use("/content", contentRouter);
+router.use("/", contentRouter);
 module.exports = router;

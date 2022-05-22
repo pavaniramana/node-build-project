@@ -356,10 +356,10 @@ const getCategory=(req,res)=>{
     const getId=(req,res)=>{
     console.log("req" ,req.params)
 
-{
-    const newuser=user.filter((value) => value.id === Number( req.params.id) )
+
+    const newuser=user.filter((value) => value.Id === Number( req.params.Id) )
         res.send(newuser)
-}
+
 }   
 
 module.exports = {getCategory,getId}
